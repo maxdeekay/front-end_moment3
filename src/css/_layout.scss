@@ -1,0 +1,45 @@
+@use "base";
+
+html {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: base.$background-color;
+    margin-left: 6.5em;
+}
+
+nav {
+    background-color: base.$nav-color;
+    width: 5em;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+    }
+
+    li {
+        list-style-type: none;
+        height: 5em;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: darken(base.$text-color, 30%);
+        height: 100%;
+        display: block;
+        line-height: 5em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: base.$text-color;
+    }
+}

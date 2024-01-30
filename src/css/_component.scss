@@ -1,0 +1,15 @@
+@use "base";
+
+h1 {
+    color: base.$accent-color;
+    font-size: 1.5em;
+}
+
+p {
+    color: base.$text-color;
+}
+
+.active {
+    background-color: base.$background-color;
+    color: base.$text-color;
+}
