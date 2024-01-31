@@ -6,19 +6,42 @@ h1 {
 }
 
 %text-style { color: base.$text-color; }
+
+@mixin box($width, $height, $radius: 0) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
 p { @extend %text-style; }
 .active { @extend %text-style; background-color: base.$background-color; }
 
+article {
+    @include box(100%, auto, 10px);
+    
+    background-color: lighten(base.$nav-color, 15%);
+    margin: 0.5em 1em 0 0;
+    padding: 0.5em;
+
+    h1, p {
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        border-radius: 10px;
+        border: 1px solid base.$nav-color;
+    }
+}
+
 #open-nav {
     @extend %text-style;
+    @include box(80px, 40px, 10px);
 
     background-color: base.$nav-color;
-    width: 80px;
-    height: 40px;
     font-weight: bold;
     text-align: center;
     line-height: 40px;
-    border-radius: 10px;
     position: absolute;
     top: 5px;
     right: 5px;

@@ -194,6 +194,12 @@ body {
   margin-left: 1em;
 }
 
+main {
+  max-width: 25em;
+  margin-top: 1em;
+  padding-right: 2em;
+}
+
 nav {
   background-color: #191919;
   width: 5em;
@@ -235,7 +241,7 @@ nav a:hover {
   }
 
   body {
-    margin-left: 6.5em;
+    margin-left: 6.5em !important;
   }
 }
 
@@ -250,6 +256,20 @@ h1 {
 
 .active {
   background-color: #333;
+}
+
+article {
+  background-color: #3f3f3f;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: .5em 1em 0 0;
+  padding: .5em;
+}
+
+article h1, article p {
+  margin: 0;
+  padding: 0;
 }
 
 #open-nav {
