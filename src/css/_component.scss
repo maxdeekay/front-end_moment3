@@ -5,11 +5,36 @@ h1 {
     font-size: 1.5em;
 }
 
-p {
-    color: base.$text-color;
+%text-style { color: base.$text-color; }
+p { @extend %text-style; }
+.active { @extend %text-style; background-color: base.$background-color; }
+
+#open-nav {
+    @extend %text-style;
+
+    background-color: base.$nav-color;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
 }
 
-.active {
-    background-color: base.$background-color;
-    color: base.$text-color;
+#open-nav:hover {
+    cursor: pointer;
+
+    @if base.$lightTheme {
+        background-color: darken(base.$nav-color, 10%);
+    } @else {
+        background-color: lighten(base.$nav-color, 20%);
+    }
+}
+
+@media (width <= 500px) {
+    #open-nav { display: block; }
 }

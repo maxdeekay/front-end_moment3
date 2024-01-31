@@ -191,13 +191,14 @@ html {
 
 body {
   background-color: #333;
-  margin-left: 6.5em;
+  margin-left: 1em;
 }
 
 nav {
   background-color: #191919;
   width: 5em;
   height: 100vh;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -228,18 +229,52 @@ nav a:hover {
   color: #fff;
 }
 
+@media (width > 500px) {
+  nav {
+    display: block !important;
+  }
+
+  body {
+    margin-left: 6.5em;
+  }
+}
+
 h1 {
   color: #ff694f;
   font-size: 1.5em;
 }
 
-p {
+#open-nav, .active, p {
   color: #fff;
 }
 
 .active {
-  color: #fff;
   background-color: #333;
+}
+
+#open-nav {
+  text-align: center;
+  background-color: #191919;
+  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#open-nav:hover {
+  cursor: pointer;
+  background-color: #4c4c4c;
+}
+
+@media (width <= 500px) {
+  #open-nav {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.273d4719.css.map */
