@@ -42,10 +42,10 @@ nav {
         line-height: 5em;
         text-align: center;
         font-weight: bold;
-    }
 
-    a:hover {
-        color: base.$text-color;
+        &:hover {
+            color: base.$text-color;
+        }
     }
 }
 

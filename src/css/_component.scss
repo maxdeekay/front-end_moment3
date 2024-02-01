@@ -46,15 +46,15 @@ article {
     top: 5px;
     right: 5px;
     display: none;
-}
 
-#open-nav:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
 
-    @if base.$lightTheme {
-        background-color: darken(base.$nav-color, 10%);
-    } @else {
-        background-color: lighten(base.$nav-color, 20%);
+        @if base.$lightTheme {
+            background-color: darken(base.$nav-color, 10%);
+        } @else {
+            background-color: lighten(base.$nav-color, 20%);
+        }
     }
 }
 
