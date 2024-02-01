@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Single+Day&display=swap');
 
-$lightTheme: false;
+$lightTheme: false !default;
 
-$nav-color: rgb(25, 25, 25);
-$background-color: lighten($nav-color, 10%);
-$accent-color: rgb(255, 105, 79);
-$text-color: white;
+$nav-color: rgb(25, 25, 25) !default;
+$background-color: lighten($nav-color, 10%) !default;
+$accent-color: rgb(255, 105, 79) !default;
+$text-color: white !default;
 
-@if $lightTheme {
+@media (prefers-color-scheme: light) {
+    $lightTheme: true;
+
     $nav-color: lighten($nav-color, 70%);
     $background-color: lighten($nav-color, 20%);
     $accent-color: rgb(255, 0, 0);
-    $text-color: black;   
+    $text-color: black;
 }

@@ -17,7 +17,5 @@ window.onload = () => {
             body.style.margin = "0 0 0 1em";
             openNav.innerHTML = "OPEN";
         }
-
-        /* const state = (style.display === "none") ? nav.style.display = "block" : nav.style.display = "none"; */
     }
 }

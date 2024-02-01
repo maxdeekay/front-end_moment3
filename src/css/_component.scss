@@ -29,7 +29,7 @@ article {
     }
 
     img {
-        border-radius: 10px;
+        @include box(100%, auto, 10px);
         border: 1px solid base.$nav-color;
     }
 }
