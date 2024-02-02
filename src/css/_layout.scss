@@ -3,7 +3,7 @@
 html { font-family: "Nunito", sans-serif; }
 
 body {
-    background-color: var(--bg-color);
+    background-color: base.$bg-color;
     margin-left: 0.5em;
 }
 
@@ -13,7 +13,7 @@ main {
 }
 
 nav {
-    background-color: var(--nav-color);
+    background-color: base.$nav-color;
     width: 5em;
     height: 100vh;
     position: fixed;
@@ -35,7 +35,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: var(--nav-link-color);
+        color: base.$nav-link-color;
         height: 100%;
         display: block;
         line-height: 80px;
@@ -43,7 +43,7 @@ nav {
         font-weight: bold;
 
         &:hover {
-            color: var(--text-color);
+            color: base.$text-color;
         }
     }
 
