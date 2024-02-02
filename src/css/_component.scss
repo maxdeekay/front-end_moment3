@@ -47,16 +47,17 @@ article {
 
 #open-nav {
     @extend %text-style;
-    @include box(80px, 40px, true);
+    @include box(50px, 40px, true);
 
     background-color: var(--nav-color);
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     line-height: 40px;
     position: absolute;
     top: 5px;
     right: 5px;
     display: none;
+    font-size: 2em;
 
     &:hover {
         cursor: pointer;

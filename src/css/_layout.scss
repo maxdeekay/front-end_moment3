@@ -29,7 +29,7 @@ nav {
 
     li {
         list-style-type: none;
-        height: 5em;
+        height: 80px;
         width: 100%;
     }
 
@@ -38,13 +38,32 @@ nav {
         color: var(--nav-link-color);
         height: 100%;
         display: block;
-        line-height: 5em;
+        line-height: 80px;
         text-align: center;
         font-weight: bold;
 
         &:hover {
             color: var(--text-color);
         }
+    }
+
+    img {
+        width: 100%;
+        max-width: 30px;
+        height: 95%;
+    }
+
+    .nav-svg-item {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+
+        &:hover {
+            filter: none;
+        }
+    }
+
+    .material-symbols-outlined {
+        font-size: 32px;
+        line-height: 75px;
     }
 }
 

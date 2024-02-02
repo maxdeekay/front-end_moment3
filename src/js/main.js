@@ -11,11 +11,11 @@ window.onload = () => {
         if (style.display === "none") {
             nav.style.display = "block";
             body.style.margin = "0 0 0 5.5em";
-            openNav.innerHTML = "CLOSE";
+            openNav.innerHTML = "close";
         } else {
             nav.style.display = "none";
             body.style.margin = "0 0 0 0.5em";
-            openNav.innerHTML = "OPEN";
+            openNav.innerHTML = "menu";
         }
     }
 }
