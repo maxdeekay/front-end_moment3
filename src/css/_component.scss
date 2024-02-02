@@ -24,7 +24,7 @@ h2 {
     }
 }
 
-p { @extend %text-style; }
+p { @extend %text-style; line-height: 1.3em }
 .active { @extend %text-style; background-color: var(--bg-color); }
 
 article {
