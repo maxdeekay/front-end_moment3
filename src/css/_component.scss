@@ -31,7 +31,7 @@ article {
     @include box(100%, auto, true);
     
     background-color: var(--article-color);
-    margin: 0.5em 1em 0 0;
+    margin: 0.5em 1em 0.5em 0;
     padding: 0.5em;
 
     h1, p {
