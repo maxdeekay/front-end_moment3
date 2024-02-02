@@ -10,11 +10,11 @@ window.onload = () => {
 
         if (style.display === "none") {
             nav.style.display = "block";
-            body.style.margin = "0 0 0 6.5em";
+            body.style.margin = "0 0 0 5.5em";
             openNav.innerHTML = "CLOSE";
         } else {
             nav.style.display = "none";
-            body.style.margin = "0 0 0 1em";
+            body.style.margin = "0 0 0 0.5em";
             openNav.innerHTML = "OPEN";
         }
     }
